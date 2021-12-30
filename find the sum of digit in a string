@@ -1,0 +1,28 @@
+https://www.hackerrank.com/contests/second-year-dec/challenges/m1p6l26-find-the-sum-of-digit-in-a-string- 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int L;
+    scanf("%d",&L);
+    char a[L+1];
+    for(int i=0;i<=L;i++)
+    {
+        scanf("%c",&a[i]);
+    }
+    int sum=0;
+    printf("The digits present in the string is ");
+    for(int i=0;i<=L;i++)
+    {   //printf("%c ",a[i]);
+        if(48<=a[i] && a[i]<=57)
+        {
+            printf("%c",a[i]);
+            sum=sum+(a[i]-48);
+        }
+    }
+    printf("\nThe sum of digits is %d",sum);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
